@@ -94,7 +94,7 @@ main h1{
     color: #217446;
     font-size: 1.5em;
 }
-main h2{
+main article > h2{
     padding-left: 10px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -103,12 +103,12 @@ main h2{
     color: #217446;
     font-family: 'Idroid', sans-serif;
 }
-main p{
+main article p{
     margin-top: 10px;
     margin-bottom: 10px;
     
-    line-height: 25px;
-    text-indent: 20px;
+    line-height: 20px;
+    text-indent: 25px;
     text-align: justify;
 }
 
@@ -120,6 +120,45 @@ main div#bugdroid{
     max-width: 350px;
     margin: auto;
 }
+
+main aside{
+    background-color: #c4ffde;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    font-size: 0.9em;
+}
+main aside p{
+    padding: 5px 10px 5px 10px;
+
+    line-height: 20px;
+    text-indent: 25px;
+    text-align: justify;
+
+}
+
+main aside ul{
+    list-style-position: inside;
+    list-style-type: '✔ ';
+    column-count: 2;
+    
+    
+    padding-left: 10px;
+    font-size: 0.9em;
+}
+
+main aside > h2{
+    padding: 5px 10px;
+    margin-bottom: 10px;
+
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    background-color: #2D9F60;
+    border-radius: 15px 15px 0px 0px;
+
+}
+
+
 
 footer{
     padding: 10px;
