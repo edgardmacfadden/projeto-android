@@ -73,12 +73,25 @@ main{
     
     max-width: 800px;
 }
+main a{
+    color: #217446;
+    font-weight: bold;
+    text-decoration: none;
+}
+main a::after{
+    content: '🔗';
+}
+main strong{
+    font-weight: bold;
+    color: #217446;
+    
+}
 main h1{
     
     margin-bottom: 10px;
     
     font-family: 'Idroid', sans-serif;
-    color: #15472c;
+    color: #217446;
     font-size: 1.5em;
 }
 main h2{
@@ -87,7 +100,7 @@ main h2{
     margin-bottom: 10px;
     
     background-image: linear-gradient(to right, #8affbf83, #f3f3f3);
-    color: #15472c;
+    color: #217446;
     font-family: 'Idroid', sans-serif;
 }
 main p{
@@ -103,10 +116,14 @@ main img{
     margin: auto;
     width: 100%;
 }
+main div#bugdroid{
+    max-width: 350px;
+    margin: auto;
+}
 
 footer{
     padding: 10px;
-    margin-top: 100px;
+    margin-top: 50px;
     
     background-color: #1B5E39;
     color: white;
