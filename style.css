@@ -4,7 +4,15 @@
 
 @font-face {
     font-family: 'Idroid';
-    src: url("fontes/idroid.otf") format("opentype");
+    src: url("fonts/idroid.otf") format("opentype");
+}
+
+:root{
+    --color0: #8affbf;
+    --color1: #3CD681;
+    --color2: #2D9F60;
+    --color3: #1B5E39;
+    --color4: #217446;
 }
 
 *{
@@ -16,12 +24,11 @@
 
 html, body{
     max-width: 100vw;
-    background-color: #8affbf;
+    background-color: var(--color0);
 }
 
 header{
-
-    background-image: linear-gradient(to bottom, #3CD681, #2D9F60,  #1B5E39 80%);
+    background-image: linear-gradient(to bottom, var(--color1), var(--color2),  var(--color3) 80%);
     color: white;
     text-align: center;
     box-shadow: 0px 2px 4px 1px #00000080;
@@ -46,19 +53,21 @@ header > nav{
     margin-top: 20px;
 
     text-align: left;
-    background-color: #1B5E39;
+    background-color: var(--color3);
+    transition-duration: 0.5s;
 }
 header > nav > a{
     display: inline-block;
     padding: 8px 7px;
-
+    
     color: white;
     font-size: 0.9em;
     font-weight: bold;
     text-decoration: none;
+    transition-duration: 0.5s;
 }
 header > nav > a:hover{
-    background-color: #2D9F60;
+    background-color: var(--color2);
 }
 
 main{
@@ -74,16 +83,19 @@ main{
     max-width: 800px;
 }
 main a{
-    color: #217446;
+    color: var(--color4);
+    padding-left: 5px;
+    padding-right: 5px;
     font-weight: bold;
     text-decoration: none;
+    background-color: #9bffc8;
 }
 main a::after{
     content: '🔗';
 }
 main strong{
     font-weight: bold;
-    color: #217446;
+    color: var(--color4);
     
 }
 main h1{
@@ -91,7 +103,7 @@ main h1{
     margin-bottom: 10px;
     
     font-family: 'Idroid', sans-serif;
-    color: #217446;
+    color: var(--color4);
     font-size: 1.5em;
 }
 main article > h2{
@@ -100,7 +112,7 @@ main article > h2{
     margin-bottom: 10px;
     
     background-image: linear-gradient(to right, #8affbf83, #f3f3f3);
-    color: #217446;
+    color: var(--color4);
     font-family: 'Idroid', sans-serif;
 }
 main article p{
@@ -153,13 +165,13 @@ main aside > h2{
     font-weight: bold;
     font-size: 1.2em;
     color: white;
-    background-color: #2D9F60;
+    background-color: var(--color2);
     border-radius: 15px 15px 0px 0px;
 
 }
 
 .video{
-    background-color: #1B5E39;
+    background-color: var(--color3);
     margin-left: -20px;
     margin-right: -20px;
     margin-bottom: 15px;
@@ -184,7 +196,7 @@ footer{
     padding: 10px;
     margin-top: 50px;
     
-    background-color: #1B5E39;
+    background-color: var(--color3);
     color: white;
     font-size: 0.9em;
     text-align: center;
