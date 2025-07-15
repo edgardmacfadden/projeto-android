@@ -13,12 +13,16 @@
     --color2: #2D9F60;
     --color3: #1B5E39;
     --color4: #217446;
+
+    --font-android: 'Idroid', cursive;
+    --font-default: Arial, Verdana, Helvetica, sans-serif;
+    --font-display: 'Bebas Neue', cursive;
 }
 
 *{
     margin: 0px;
     padding: 0px;   
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-default);
     font-weight: normal;
 }
 
@@ -36,7 +40,7 @@ header{
 header > h1{
     padding-top: 20px;
     
-    font-family: "Bebas Neue", sans-serif;
+    font-family: var(--font-display);
     font-size: 2.5em;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.322);
     
@@ -44,7 +48,12 @@ header > h1{
 header > p{
     padding-top: 20px;
     padding-bottom: 10px;
-    
+    padding-left: 10px;
+    padding-right: 10px;
+
+    max-width: 500px;
+    margin: auto;
+
     text-shadow: 2px 2px rgba(0, 0, 0, 0.322);
     font-size: 1em;
 }
@@ -64,7 +73,7 @@ header > nav > a{
     font-size: 0.9em;
     font-weight: bold;
     text-decoration: none;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }
 header > nav > a:hover{
     background-color: var(--color2);
@@ -91,7 +100,7 @@ main a{
     background-color: #9bffc8;
 }
 main a::after{
-    content: '🔗';
+    content: ' 🔗';
 }
 main strong{
     font-weight: bold;
@@ -102,7 +111,7 @@ main h1{
     
     margin-bottom: 10px;
     
-    font-family: 'Idroid', sans-serif;
+    font-family: var(--font-android);
     color: var(--color4);
     font-size: 1.5em;
 }
@@ -113,13 +122,13 @@ main article > h2{
     
     background-image: linear-gradient(to right, #8affbf83, #f3f3f3);
     color: var(--color4);
-    font-family: 'Idroid', sans-serif;
+    font-family: var(--font-android);
 }
 main article p{
     margin-top: 10px;
     margin-bottom: 10px;
     
-    line-height: 20px;
+    line-height: 1.5em;
     text-indent: 25px;
     text-align: justify;
 }
@@ -142,7 +151,7 @@ main aside{
 main aside p{
     padding: 5px 10px 5px 10px;
 
-    line-height: 20px;
+    line-height: 1.5em;
     text-indent: 25px;
     text-align: justify;
 
@@ -176,11 +185,7 @@ main aside > h2{
     margin-right: -20px;
     margin-bottom: 15px;
     
-    min-width: 100%;
-    max-height: 495px;
-    padding-top: 56.25%;
-    
-
+    aspect-ratio: 16 / 9;
     position: relative;
 }
 
