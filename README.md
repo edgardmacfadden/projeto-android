@@ -1,3 +1,3 @@
 # projeto-android
 Projeto baseado no curso de HTML e CSS do professor Gustavo Guanabara.<br>
-Para mais informações, consulte: [vídeo do projeto android]("https://youtu.be/xS2D9x8odoE?si=Wy23IKgX8yK_fxww")
+Para mais informações, consulte: [vídeo do projeto android](https://youtu.be/xS2D9x8odoE?si=Wy23IKgX8yK_fxww)
